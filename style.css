@@ -4,10 +4,54 @@ body {
 	margin: 0;
 }
 
-h1 {x
+h3 {
+	background-color: cyan;
+}
+
+h1 {
+	background-color: yellow;
 }
 
 p {
 	background-color: grey;
-	height: 100px;
+	height: 150px;
 }
+
+nav {
+	background-color: grey;
+	/* height: 50px Turn off or delete the height setting */
+	color: white;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 15px;
+}
+
+nav ul { /* This sets the width and margins of the whole nav menu list */
+	width: 200%;
+	margin: auto;
+}
+
+
+
+/* position the drop down */
+
+nav li ul {
+	padding: 0px;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 20px;
+}
+
+/* Make the dropdown appear on hover */
+
+.hidden {
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+nav li: hover .hidden {
+	opacity: 1;
+}
+	
